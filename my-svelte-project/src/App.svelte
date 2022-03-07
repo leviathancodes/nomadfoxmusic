@@ -1,10 +1,13 @@
 <script>
 	export let name;
-	import * as data from '../appdata.json';
+	import * as data from './appdata.json';
+	import { Button } from 'carbon-components-svelte';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<body>
+		<h1>{data.title}</h1>
+	</body>
 </main>
 
 <style>
