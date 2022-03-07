@@ -1,33 +1,29 @@
 <script>
-	export let name;
 	import * as data from './appdata.json';
 	import { Button } from 'carbon-components-svelte';
+	import 'carbon-components-svelte/css/g100.css';
+
 </script>
 
-<main>
-	<body>
+
+<body>
+	<div class="eduardo">
 		<h1>{data.title}</h1>
-	</body>
-</main>
+		<a href={data.featured.latestMusic.link}>
+			<Button isSelected class="link" kind="tertiary">
+				{data.featured.latestMusic.title}
+			</Button>
+		</a>
+	</div>
+</body>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+		<style>
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+			.eduardo {
+				display: flex;
+				flex-direction: column;
+  align-items: center;
+  justify-content: center
+			}
+		</style>

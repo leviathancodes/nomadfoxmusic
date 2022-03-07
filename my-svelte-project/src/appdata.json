@@ -1,6 +1,10 @@
 {
   "title": "Nomad Fox",
   "featured": {
+    "latestMusic": {
+      "title": "Nomads Never Die",
+      "link": "https://nomadfox.bandcamp.com/"
+    },
     "cta": ""
   },
   "socials": {
